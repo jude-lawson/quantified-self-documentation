@@ -3,12 +3,9 @@ import React, { Component } from 'react';
 import SectionLink from './SectionLink';
 import SectionHeader from './SectionHeader';
 
-import introduction from '../pages/Introduction';
-
 export default class SectionsDrawer extends Component {
   
   render() {
-    console.log(introduction);
     return (
       <aside className='sections-drawer'>
         <SectionHeader name='Introduction' />

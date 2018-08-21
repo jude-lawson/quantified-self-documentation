@@ -9,9 +9,9 @@ export default class Main extends Component {
     return (
       <main>
         <article>
-          <Route exact path='/' component={Introduction} />
-          <Route path='/introduction' component={Introduction} />
-          <Route path='/setup' component={Setup} />
+          <Route exact path={process.env.PUBLIC_URL + '/'} component={Introduction} />
+          <Route path={process.env.PUBLIC_URL + '/introduction'} component={Introduction} />
+          <Route path={process.env.PUBLIC_URL + '/setup'} component={Setup} />
         </article>
       </main>
     );
